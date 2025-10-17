@@ -15,7 +15,7 @@
     <p>Uz pravilne vježbe snage, fleksibilnosti i tehničke uvide, možeš puno brže napredovati. Redoviti trening i analiza vlastitih problema (smjerova) donose bolje rezultate.</p>
     
     <h2>Popularne marke penjačica</h2>
-    <table border="1" cellpadding="5" cellspacing="0">
+    <table border="1" cellpadding="5" cellspacing="5">
       <tr>
         <th>La Sportiva</th>
         <th>Scarpa</th>
@@ -44,7 +44,7 @@
         <td>Skwama</td>
         <td>Vapor V</td>
         <td>Kirigami</td>
-        <td rowspan="2">Kira</td>
+        <td>Kira</td>
       </tr>
       <tr>
         <td>Tarantulace</td>
