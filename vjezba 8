@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+
+  <title>Vjezba 8</title>
+</head>
+<body>
+
+  <h2>Odlomci unutar &lt;div&gt; elementa</h2>
+
+  <div>
+    <p>Penjanje po stijenama zahtijeva <b style="color:red">snagu</b> i dobru ravnotežu.</p>
+    <p>Svaki pokret mora biti <b style="color:red">precizan</b> kako bi se sigurno doseglo sljedeće uporište.</p>
+  </div>
+
+  <h2>Odlomci izvan &lt;div&gt; elementa</h2>
+
+  <p>Planinari često osjećaju <b style="color:red">slobodu</b> kad dosegnu vrh planine.</p>
+  <p>Penjanje nas uči <b style="color:red">strpljenju</b> i upornosti u suočavanju s izazovima.</p>
+
+</body>
+</html>
