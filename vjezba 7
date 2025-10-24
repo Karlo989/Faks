@@ -1,0 +1,64 @@
+<!-- Neuređena lista -->
+<h3>Osnovna oprema za bouldering</h3>
+<ul>
+  <li>Penjačice</li>
+  <li>Magnezijev prah (chalk)</li>
+  <li>Kreda torbica</li>
+  <li>Udobna sportska odjeća</li>
+  <li>Podloga za padanje (crash pad)</li>
+</ul>
+
+<!-- Uređena lista -->
+<h3>Koraci prije penjanja</h3>
+<ol>
+  <li>Ugrij se i razgibaj</li>
+  <li>Pregledaj smjer (problem)</li>
+  <li>Planiraj pokrete</li>
+  <li>Penji kontrolirano</li>
+  <li>Sigurno skoči ili siđi</li>
+</ol>
+
+<!-- Definicijska lista -->
+<h3>Pojmovi u boulderingu</h3>
+<dl>
+  <dt>Problem</dt>
+  <dd>Kratka penjačka ruta koju treba riješiti određenim slijedom pokreta.</dd>
+  
+  <dt>Top</dt>
+  <dd>Završna točka smjera koju penjač mora uhvatiti s obje ruke da bi problem bio riješen.</dd>
+  
+  <dt>Beta</dt>
+  <dd>Informacija ili savjet kako najbolje riješiti određeni problem.</dd>
+  
+  <dt>Crux</dt>
+  <dd>Najzahtjevniji dio penjačkog smjera.</dd>
+</dl>
+
+<!-- Ugniježđena lista -->
+<h3>Popularne dvorane za bouldering u Hrvatskoj</h3>
+<ol>
+  <li>Zagreb
+    <ul>
+      <li>Hive Bouldering</li>
+      <li>Fothia East</li>
+      <li>Fothia West</li>
+    </ul>
+  </li>
+  <li>Split
+    <ul>
+      <li>SPK Marulianus</li>
+    </ul>
+  </li>
+  <li>Rijeka
+    <ul>
+      <li>RiRock Climbing Gym</li>
+    </ul>
+  </li>
+</ol>
+
+<br><br>
+
+<footer>&copy; Karlo Čunčić
+    &amp; Climbing <a href="https://github.com/Karlo989"
+    target="_blank">Github</a> &amp; All rights reseved.
+</footer>
