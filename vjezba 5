@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+
+  <h2>Popularne marke penjačica</h2>
+  
+  <table border="1" cellpadding="10" cellspacing="0">
+    <tr>
+      <th>La Sportiva</th>
+      <th>Scarpa</th>
+      <th>Five Ten</th>
+      <th>Evolv</th>
+    </tr>
+    <tr>
+      <td>
+        Solution<br>
+    <img src="https://www.bfgcdn.com/1500_1500_90/301-0448-0111/la-sportiva-solution-climbing-shoes.jpg" width="150" height="150" alt="La Sportiva Solution">
+  </td>
+      <td>
+        Drago<br>
+        <img src="https://www.bfgcdn.com/600_600_90/301-0627-0111/scarpa-drago-lv-climbing-shoes.jpg" width="150" height="150" alt="Scarpa Drago">
+      </td>
+      <td>
+        Hiangle<br>
+        <img src="https://www.bfgcdn.com/1500_1500_90/301-0938-0111/five-ten-hiangle-climbing-shoes.jpg" width="150" height="150" alt="Five Ten Hiangle">
+      </td>
+      <td>
+        Shaman<br>
+        <img src="https://www.bfgcdn.com/600_600_90/301-0763-0111/evolv-shaman-lv-climbing-shoes.jpg" width="150" height="150" alt="Evolv Shaman">
+      </td>
+    </tr>
+    <tr>
+      <td>
+        Miura<br>
+        <img src="https://www.bfgcdn.com/600_600_90/301-0453-0111/la-sportiva-womens-miura-climbing-shoes.jpg" width="150" height="150" alt="La Sportiva Miura">
+      </td>
+      <td>
+        Instinct VS<br>
+        <img src="https://www.bfgcdn.com/600_600_90/301-0378-0111/scarpa-instinct-vsr-climbing-shoes.jpg" width="150" height="150" alt="Scarpa Instinct VS">
+      </td>
+      <td>
+        Quantum<br>
+        <img src="https://www.bfgcdn.com/600_600_90/301-0684-0111/five-ten-womens-niad-vcs-climbing-shoes.jpg" width="150" height="150" alt="Five Ten Quantum">
+      </td>
+      <td>
+        Phantom<br>
+        <img src="https://www.bfgcdn.com/600_600_90/301-0970-0111/evolv-phantom-pro-lv-climbing-shoes.jpg" width="150" height="150" alt="Evolv Phantom">
+      </td>
+    </tr>
+    <tr>
+      <td>
+        Otaki<br>
+        <img src="https://www.bfgcdn.com/1500_1500_90/301-0327-0111/la-sportiva-otaki-climbing-shoes.jpg" width="150" height="150" alt="La Sportiva Otaki">
+      </td>
+      <td>
+        Boostic<br>
+        <img src="https://www.bfgcdn.com/600_600_90/301-0574-0111/scarpa-booster-climbing-shoes.jpg" width="150" height="150" alt="Scarpa Boostic">
+      </td>
+      <td>
+        Aleon<br>
+        <img src="https://www.bfgcdn.com/600_600_90/301-0643-0111/five-ten-hiangle-pro-climbing-shoes.jpg" width="150" height="150" alt="Five Ten Aleon">
+      </td>
+      <td>
+        Zenist<br>
+        <img src="https://www.bfgcdn.com/1500_1500_90/301-0866-0111/evolv-zenist-climbing-shoes-bf.jpg" width="150" height="150" alt="Evolv Zenist">
+      </td>
+    </tr>
+    <tr>
+      <td>
+        Skwama<br>
+        <img src="https://www.bfgcdn.com/1500_1500_90/301-0329-0211/la-sportiva-skwama-climbing-shoes.jpg" width="150" height="150" alt="La Sportiva Skwama">
+      </td>
+      <td>
+        Vapor V<br>
+        <img src="https://www.bfgcdn.com/600_600_90/301-0521-0111/scarpa-vapor-v-climbing-shoes-bf.jpg" width="150" height="150" alt="Scarpa Vapor V">
+      </td>
+      <td>
+        Kirigami<br>
+        <img src="https://www.bfgcdn.com/600_600_90/301-0939-0111/five-ten-kirigami-climbing-shoes.jpg" width="150" height="150" alt="Five Ten Kirigami">
+      </td>
+      <td>
+        Kira<br>
+        <img src="https://www.bfgcdn.com/600_600_90/301-0762-0111/evolv-phantom-lv-climbing-shoes.jpg" width="150" height="150" alt="Evolv Kira">
+      </td>
+    </tr>
+    <tr>
+      <td>
+        Tarantulace<br>
+        <img src="https://www.bfgcdn.com/600_600_90/301-0709-0111/la-sportiva-tarantula-climbing-shoes.jpg" width="150" height="150" alt="La Sportiva Tarantulace">
+      </td>
+      <td>
+        Origin<br>
+        <img src="https://www.bfgcdn.com/600_600_90/301-0576-0111/scarpa-origin-climbing-shoes.jpg" width="150" height="150" alt="Scarpa Maestro">
+      </td>
+      <td>
+        Rogue<br>
+        <img src="https://www.bfgcdn.com/600_600_90/301-0680-0111/five-ten-niad-moccasym-climbing-shoes.jpg" width="150" height="150" alt="Five Ten Rogue">
+      </td>
+      <td>
+        Oracle<br>
+        <img src="https://www.bfgcdn.com/1500_1500_90/301-0969-0111/evolv-phantom-pro-climbing-shoes.jpg" width="150" height="150" alt="Evolv Oracle">
+      </td>
+    </tr>
+  </table>
