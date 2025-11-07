@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <title>Forma</title>
+</head>
+
+<body>
+    <form action="korisnikinfo.php" method="Post">
+
+        <div class="grupaforme">
+            <label for="firstname">Ime: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+            <input type="text" class="form-control" id="firstname" name="firstname">
+        </div>
+        <br>
+
+        <div class="grupaforme">
+            <label for="lastname">Prezime: </label>
+            <input type="text" class="form-control" id="lastname" name="lastname">
+        </div>
+        <br>
+
+        <div class="formagrupe">
+            <label for="email">E-mail:&nbsp;&nbsp; </label>
+            <input type="email" class="form-control" id="email" name="email">
+        </div>
+        <br>
+
+        <div class="formagrupe">
+            <input type="radio" name="gender" value="Male"> Muško<br>
+            <input type="radio" name="gender" value="Female"> Žensko
+        </div>
+        <br>
+
+        <div class="formagroupe">
+            <input type="submit" class="btn btn-default" value="Pošalji">
+            <input type="reset" class="btn btn-default" value="Poništi">
+        </div>
+
+    </form>
+</body>
+</html>
