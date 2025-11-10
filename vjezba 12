@@ -3,6 +3,7 @@
 <head>
     <title>Forma</title>
 </head>
+
 <body>
     <form action="userinfoo2.php" method="Post">
         <div class = "formgrupa"><br>
@@ -22,7 +23,7 @@
         <br>
         <div class ="formgrupa">
             <label for="email">Email *</label><br>
-            <input type="text" id="email" placeholder="Your Email" required>   
+            <input type="email" id="email" name="email" placeholder="Your Email" required>   
         </div>
         <br>
         <input type="radio" name="gender" value="Male"> Male<br>
@@ -30,6 +31,7 @@
         <br>
         <input type="checkbox" name="terms" value="Terms and conditions">Terms and conditions<br>
         <br>
+        <label for="shoesize">Shoe Size *</label><br>
         <select class="form-control" name="Shoesize" value="Shoe size" required>
           <option value="">Please choose the option</option>
           <option value="37">37</option>
