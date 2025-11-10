@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <title>Forma</title>
+</head>
+
+<body>
+    <form action="userinfoo2.php" method="Post">
+        <div class = "formgrupa"><br>
+            <label for="firstname">First Name *</label><br>
+            <input type="text" id="firstname" placeholder="Your first name" required autofocus>   
+        </div>
+        <br>
+        <div class = "formgrupa">
+            <label for="lastname">Last Name *</label><br>
+            <input type="text" id="firstname" placeholder="Your last name" required>   
+        </div>
+        <br>
+        <div class = "formgrupa">
+          <label for = "password">Password *</label><br>
+          <input type = "password" id = "password" placeholder = "Your password" required>
+        </div>
+        <br>
+        <div class ="formgrupa">
+            <label for="email">Email *</label><br>
+            <input type="text" id="email" placeholder="Your Email" required>   
+        </div>
+        <br>
+        <input type="radio" name="gender" value="Male"> Male<br>
+        <input type="radio" name="gender" value="Female"> Female<br>
+        <br>
+        <input type="checkbox" name="terms" value="Terms and conditions">Terms and conditions<br>
+        <br>
+        <select class="form-control" name="Shoesize" value="Shoe size" required>
+          <option value="">Please choose the option</option>
+          <option value="37">37</option>
+          <option value="38">38</option>
+          <option value="39">39</option>
+          <option value="40">40</option>
+          <option value="41">41</option>        
+          <option value="42">42</option>
+          <option value="43">43</option>
+          <option value="44">44</option>
+        </select><br>
+        <br>
+        <div class="formgrupa">
+        <label for="info"> Additional Info</label><br>        
+        </div>
+        <textarea class="form-control" name="Additionalinfo" value="additionalinfo" placeholder="Info we should know about you"></textarea> <br>
+        <br>
+        <label for="Country">Country *</label><br>
+        <select name="Country" id="Country" required>
+        <option value="Hr">Croatia</option>
+        <option value="Slo">Slovenia</option>
+        <option value="Ger">Germania</option>
+        </select><br>
+        <br>
+        <input type="submit" value="Send">
+        <input type="reset" value="Reset">
+        </div>
+        
+      </form>
