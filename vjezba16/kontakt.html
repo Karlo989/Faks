@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="hr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Svijet Penjanja</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        font-family: Arial, sans-serif;
+        background-color: white;
+      }
+      header {
+        background-color: white;
+        border: 1px solid #cccccc;
+        margin: 20px;
+        padding: 10px;
+      }
+      .banner img {
+        width: 100%;
+        display: block;
+        border-bottom: 3px solid #1100ff;
+      }
+      .main-nav {
+        background-color: #333333;
+        padding: 8px;
+        margin-top: 0px;
+      }
+      ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+      }
+      li {
+        display: inline-block;
+        margin-right: 15px;
+      }
+      a {
+        text-decoration: none;
+        color: white;
+        border: 1px solid white;
+        padding: 5px 12px;
+        font-size: 14px;
+      }
+      main {
+        background-color: white;
+        border: 1px solid #cccccc;
+        margin: 0 20px 20px 20px;
+        padding: 10px;
+      }
+      main p {
+        line-height: 1.5;
+      }
+      footer {
+        text-align: center;
+        font-size: 12px;
+        color: #555555;
+        margin-bottom: 10px;
+      }
+      .kontakt {
+        background-color: #f9f9f9;
+        padding: 2rem;
+        margin: 2rem auto;
+        max-width: 600px;
+        border-radius: 8px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        font-family: Arial, sans-serif;
+      }
+      .kontakt h2 {
+        color: #d010c6;
+        margin-bottom: 1rem;
+      }
+      .form-row {
+        margin-bottom: 1rem;
+      }
+      .form-row label {
+        display: inline-block;
+        margin-bottom: 1rem;
+        font-weight: bold;
+        color: #9f2cc2;
+      }
+      .form-row input[type="text"],
+      .form-row input[type="email"],
+      .form-row select,
+      .form-row textarea {
+        width: 100%;
+        padding: 0.5rem;
+        border: 1px solid #cccccc;
+        border-radius: 4px;
+        font-size: 1rem;
+        font: inherit;
+        background-color: #ffffff;
+        box-sizing: border-box;
+      }
+      .form-row input:focus,
+      .form-row select:focus,
+      .form-row textarea:focus {
+        border-color: #c010d0;
+        outline: none;
+        box-shadow: 0 0 5px rgba(16, 122, 208, 0.5);
+      }
+      .form-row input[type="checkbox"]:checked + label,
+      .form-row input[type="radio"]:checked + label {
+        font-weight: bold;
+        color: #3dd010;
+      }
+      .form-row .option {
+        margin-bottom: 0.5rem;
+        align-self: auto;
+        display: inline-block;
+      }
+      .form-row .option label {
+        font-weight: normal;
+        color: #333333;
+        margin-left: 0.4rem;
+        margin-right: 10px;
+      }
+      .form-row p {
+        margin-bottom: 10px;
+      }
+      .form-row .option input {
+        margin-bottom: 0;
+      }
+      .form-row input:disabled {
+        background-color: #eeeeee;
+        color: #666666;
+        cursor: not-allowed;
+        border-color: #dcdcdc;
+      }
+      .form-row input[type="submit"] {
+        background-color: #e1dbe2;
+        color: rgb(14, 11, 11);
+        display: inline-block;
+        padding: 0.4rem 1.5rem;
+        border: none;
+        border-radius: 4px;
+        font-size: 1rem;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+      }
+      .btn-send:hover {
+        background-color: #218838;
+      }
+      .main-nav a:hover {
+        background-color: #ffcc00;
+        color: #333;
+      }
+      .main-nav a:focus {
+        outline: 2px solid #c76e32;
+        background-color: #ffcc00;
+        color: #333;
+      }
+      .main-nav a:active {
+        transform: scale(0.95);
+        background-color: #003de6;
+      }
+      .main-nav a[href="galerija.html"] {
+        background-color: #107ad0;
+        border-color: #0d5ca0;
+      }
+      .main-nav a[target="_blank"] {
+        background-color: #d01012;
+      }
+      .main-nav a[target="_blank"]::after {
+        content: " ↗";
+        font-size: 0.8em;
+        margin-left: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <center>
+      <header>
+        <div class="banner">
+          <img src="https://i.imgur.com/8S9xv1g.jpeg" alt="Umjetno penjanje" />
+        </div>
+
+        <nav class="main-nav">
+          <ul>
+            <li><a href="index.html">Početna</a></li>
+            <li><a href="#">Lokacije</a></li>
+            <li><a href="#">Oprema</a></li>
+            <li><a href="kontakt.html">Kontakt</a></li>
+            <li><a href="galerija.html">Galerija</a></li>
+            <li>
+              <a href="https://www.ifsc-climbing.org" target="_blank"
+                >Službena IFSC stranica</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <section class="kontakt">
+        <h2>Kontaktirajte nas</h2>
+        <br />
+        <p>
+          Ako imate neko pitanje o nama ili o sportu, ispunite kontakt obrazac u
+          nastavku.
+        </p>
+        <br />
+        <form class="kontakt-forma" action="#" method="post">
+          <div class="form-row">
+            <label for="ime">Ime</label>
+            <input
+              type="text"
+              id="ime"
+              name="ime"
+              placeholder="Vaše ime..."
+              required
+            />
+          </div>
+          <div class="form-row">
+            <label for="prezime">Prezime</label>
+            <input
+              type="text"
+              id="prezime"
+              name="prezime"
+              placeholder="Vaše prezime..."
+              required
+            />
+          </div>
+          <div class="form-row">
+            <label for="email">Email</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Vaš email..."
+              required
+            />
+          </div>
+          <div class="form-row">
+            <label for="country">Penjaona</label>
+            <select id="country" name="country">
+              <option value="hive">Hive</option>
+              <option value="boulderzona">Boulder Zona</option>
+              <option value="drugo">Drugo</option>
+            </select>
+          </div>
+          <div class="form-row">
+            <label for="subject">Poruka</label>
+            <textarea
+              id="subject"
+              name="subject"
+              rows="6"
+              placeholder="Napišite svoju poruku..."
+            ></textarea>
+          </div>
+          <div class="form-row">
+            <p><strong>Events</strong></p>
+            <div class="option">
+              <input type="checkbox" id="newsletter" name="events" />
+              <label for="newsletter"
+                >Želim primati obavijesti o eventima</label
+              >
+            </div>
+          </div>
+          <div class="form-row">
+            <p><strong>Želim odgovor putem:</strong></p>
+            <div class="option">
+              <input
+                type="radio"
+                id="reply-email"
+                name="reply-method"
+                value="email"
+                checked
+              />
+              <label for="reply-email">E-maila</label>
+            </div>
+            <div class="option">
+              <input
+                type="radio"
+                id="reply-sms"
+                name="reply-method"
+                value="sms"
+              />
+              <label for="reply-sms">SMS poruke</label>
+            </div>
+          </div>
+          <div class="form-row">
+            <label for="ticket-id">ID vašeg upita (IN WORKS!)</label>
+            <input
+              type="text"
+              id="ticket-id"
+              name="ticket-id"
+              value="#MSG-2025-HV"
+              disabled
+            />
+          </div>
+          <div class="form-row">
+            <input type="submit" value="Pošalji" />
+          </div>
+        </form>
+      </section>
+    </center>
+    <br />
+    <footer>&copy; 2025 Karlo Čunčić</footer>
+  </body>
+</html>
