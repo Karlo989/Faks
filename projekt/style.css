@@ -1,0 +1,299 @@
+/* Sveopći reset - ovo radim prvo da mi browser ne gura svoje razmake */
+* {
+    box-sizing: border-box; /* jako bitno: širina ostaje ista i kad dodam padding */
+    margin: 0; /* brišem vanjske razmake svih elemenata */
+    padding: 0; /* brišem unutarnje razmake svih elemenata */
+}
+
+/* Glavne postavke stranice */
+body {
+    font-family: Arial, sans-serif; /* najsigurniji font, svi ga imaju */
+    line-height: 1.6; /* da tekst ne bude nabijen, lakše se čita */
+    color: #333; /* tamna boja teksta, ali ne baš skroz crna */
+    background-color: #f5f2ee; /* neka svijetlo-bež, podsjeća na papir ili pjenu kave */
+}
+
+/* Zaglavlje stranice */
+header {
+    background-color: #3c2a21; /* tamno smeđa, kao pržena kava */
+    color: #ffffff; /* bijela slova da se vide na tamnom */
+}
+
+/* BANNER SLIKA - Centralni dio na vrhu stranice */
+.banner {
+    position: relative; /* osnova za absolute pozicioniranje unutar ovoga */
+    height: 400px; /* visina cijelog onog dijela sa slikom kave */
+    background-color: #3c2a21; /* boja koja se vidi dok se slika učitava */
+    display: flex; /* koristim flexbox za centriranje svega unutra */
+    align-items: center; /* centriraj sadržaj po vertikali */
+    justify-content: center; /* centriraj sadržaj po horizontali */
+    overflow: hidden; /* sve što ispadne iz 400px visine se ne vidi */
+    margin: 0; /* za svaki slučaj bez razmaka */
+}
+
+/* Postavke same slike unutar bannera */
+.banner-slika {
+    position: absolute !important; /* slika mora biti "prikovana" za pozadinu */
+    top: 0; /* kreni od samog vrha */
+    left: 0; /* kreni od skroz lijevo */
+    width: 100% !important; /* raširi sliku preko cijelog ekrana */
+    height: 100% !important; /* rastegni sliku do dna bannera */
+    object-fit: cover !important; /* slika se sama reže da popuni prostor bez deformacije */
+    z-index: 0 !important; /* baci sliku skroz iza svega */
+}
+
+/* Prozirna kutija preko slike da tekst bude čitljiv */
+.banner-tekst {
+    position: relative; /* mora imati ovo da bi z-index radio */
+    z-index: 2; /* broj 2 je veći od 0, pa je tekst iznad slike */
+    text-align: center; /* centriraj tekst unutar kutije */
+    color: white; /* slova u banneru neka budu bijela */
+    padding: 20px; /* razmak od rubova kutije do teksta */
+    background: rgba(0,0,0,0.3); /* prozirna crna pozadina (0.3 je jačina prozirnosti) */
+    border-radius: 10px; /* zaobljeni rubovi te crne kutije */
+}
+
+/* Glavni naslov u banneru */
+.banner h1 {
+    font-size: 3rem; /* baš velika slova za naslov */
+    margin-bottom: 10px; /* malo razmaka do teksta ispod */
+    text-shadow: 2px 2px 8px rgba(0,0,0,1); /* crna sjena oko slova da lakše čitam */
+}
+
+/* Paragraf u banneru */
+.banner p {
+    font-size: 1.2rem; /* malo veći tekst od normalnog */
+    text-shadow: 1px 1px 4px rgba(0,0,0,1); /* sjena i na manjem tekstu */
+}
+
+/* Postavke za tablete i manje ekrane */
+@media (max-width: 768px) {
+    .banner {
+        height: 300px; /* smanji banner da ne zauzme pol ekrana na mobu */
+    }
+    .banner h1 { font-size: 2rem; } /* smanji i naslov */
+    .banner p { font-size: 1rem; } /* i tekst */
+}
+
+/* Postavke za baš male mobitele */
+@media (max-width: 600px) {
+    .banner h1 {
+        font-size: 2.2rem; /* dodatna korekcija za sitne ekrane */
+    }
+    .banner p {
+        font-size: 1rem; /* tekst ostaje čitljiv */
+    }
+}
+
+/* Navigacijski menu */
+nav {
+    background-color: #4b382b; /* malo toplija smeđa za menu */
+}
+
+/* Lista unutar menu-a */
+nav ul {
+    list-style: none; /* makni one dosadne točkice ispred linkova */
+    display: flex; /* posloži linkove jedan pored drugog */
+    flex-wrap: wrap; /* ako ih ima puno, nek idu u novi red */
+    justify-content: center; /* centriraj menu na stranici */
+}
+
+/* Linkovi u navigaciji */
+nav a {
+    display: block; /* link zauzima cijeli prostor paddinga */
+    padding: 12px 20px; /* razmak oko teksta linka */
+    color: #ffffff; /* bijela boja slova */
+    text-decoration: none; /* makni ono automatsko podcrtavanje linkova */
+    font-weight: bold; /* podebljana slova za menu */
+}
+
+/* Efekt kad se mišem prođe preko linka ili kad je aktivan */
+nav a:hover,
+nav a.active {
+    background-color: #e0a96d; /* boja kave s više mlijeka */
+    color: #3c2a21; /* slova postaju tamna da se vide na svijetloj pozadini */
+}
+
+/* Glavni sadržaj stranice */
+main {
+    max-width: 1100px; /* ne dopusti sadržaju da se previše raširi na velikim ekranima */
+    margin: 20px auto; /* centriraj main i dodaj 20px razmaka gore-dolje */
+    padding: 0 15px; /* razmak od rubova ekrana na mobitelu */
+}
+
+/* Naslovi u uvodnom dijelu */
+.uvod h2 {
+    font-size: 2rem; /* srednje veliki naslov sekcije */
+    margin-bottom: 10px; /* razmak do podnaslova */
+}
+
+.uvod h3 {
+    font-size: 1.3rem; /* manji podnaslov */
+    margin-bottom: 20px; /* razmak do teksta */
+    color: #6b4f37; /* boja lješnjaka za podnaslove */
+}
+
+/* Tekst u uvodnom dijelu */
+.uvod p {
+    margin-bottom: 15px; /* razmak između odlomaka teksta */
+    text-align: justify; /* poravnaj tekst s obje strane, izgleda profi */
+}
+
+/* Slike s opisom */
+figure {
+    margin-top: 20px; /* odmakni sliku od teksta iznad */
+    text-align: center; /* centriraj sliku i opis */
+}
+
+/* Same slike unutar stranice */
+figure img {
+    max-width: 100%; /* nikad šira od ekrana */
+    height: auto; /* zadrži proporcije visine */
+    border-radius: 8px; /* lijepi zaobljeni rubovi na svim slikama */
+}
+
+/* Opis ispod slike */
+figcaption {
+    font-size: 0.9rem; /* malo sitniji tekst za opis */
+    color: #555; /* siva boja da ne odvlači pažnju s glavnog teksta */
+    margin-top: 8px; /* odmakni od dna slike */
+}
+
+/* Podnožje stranice */
+footer {
+    text-align: center; /* centriraj copyright tekst */
+    padding: 15px 10px; /* razmak gore i dolje */
+    background-color: #3c2a21; /* ista tamna boja kao header */
+    color: #ffffff; /* bijela slova */
+    margin-top: 30px; /* odmakni footer od sadržaja iznad */
+}
+
+/* Grid za listu članaka (npr. recepti) */
+.clanci-lista {
+    display: grid; /* aktiviraj grid sustav */
+    grid-template-columns: 1fr; /* stavi sve u jedan stupac */
+    gap: 20px; /* razmak od 20px između dva članka */
+    margin-top: 20px;
+}
+
+/* Pojedinačni članak u listi */
+.clanak {
+    display: flex; /* slika s jedne, tekst s druge strane */
+    flex-direction: row; /* poredaj ih vodoravno */
+    background-color: #ffffff; /* bijela pozadina kutije članka */
+    border-radius: 8px; /* zaobljeni kutovi kutije */
+    overflow: hidden; /* da slika ne viri van zaobljenih kutova */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.08); /* suptilna sjena da kutija "lebdi" */
+}
+
+/* Mala slika u popisu članaka */
+.clanak img {
+    width: 160px; /* fiksna širina da sve sličice budu iste */
+    height: 120px; /* fiksna visina */
+    object-fit: cover; /* ako je slika drugačijeg omjera, samo ju izreži */
+}
+
+/* Tekstualni dio malog članka */
+.clanak-sadrzaj {
+    padding: 10px 15px; /* razmak unutar kutije */
+    flex: 1; /* neka ovaj dio zauzme sav prostor koji ostane pored slike */
+}
+
+/* Naslovi u člancima */
+.clanak-sadrzaj h3 {
+    margin-bottom: 5px; /* odmakni naslov od datuma */
+    font-size: 1.1rem; /* veličina naslova članka */
+}
+
+/* Link na naslovu članka */
+.clanak-sadrzaj h3 a {
+    color: #3c2a21; /* tamno smeđa slova */
+    text-decoration: none; /* bez podcrtavanja */
+}
+
+/* Datum objave */
+.clanak-sadrzaj .datum {
+    font-size: 0.85rem; /* sitniji datum */
+    color: #777; /* blijedo siva boja */
+    margin-bottom: 8px;
+}
+
+/* Responzivnost za listu članaka */
+@media (max-width: 768px) {
+    .clanak {
+        flex-direction: column; /* na mobitelu stavi sliku IZNAD teksta */
+    }
+
+    .clanak img {
+        width: 100%; /* na mobitelu slika neka bude preko cijele širine */
+        height: auto; /* neka visina prati širinu */
+    }
+}
+
+/* Sekcija za kontakt formu */
+.kontakt-forma {
+    margin-top: 20px;
+    background-color: #ffffff; /* bijela pozadina forme */
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.08);
+}
+
+/* Grupiranje labela i inputa u formi */
+.form-grupa {
+    margin-bottom: 12px; /* razmak između polja za unos */
+    display: flex; /* koristi flex za lakše slaganje */
+    flex-direction: column; /* naslov polja ide iznad polja za pisanje */
+}
+
+/* Izgled polja za unos (input, select, textarea) */
+.form-grupa input,
+.form-grupa select,
+.form-grupa textarea {
+    padding: 8px; /* razmak unutar polja da tekst ne dodiruje rub */
+    border: 1px solid #ccc; /* tanki sivi okvir */
+    border-radius: 4px; /* blago zaobljeni rubovi polja */
+    font: inherit; /* koristi isti font kao i ostatak stranice */
+}
+
+/* Gumbi u formi */
+.form-gumbi button {
+    padding: 8px 16px; /* veličina gumba */
+    border: none; /* makni defaultni sivi okvir browsera */
+    border-radius: 4px; /* zaobljeni gumb */
+    background-color: #6b4f37; /* smeđa boja gumba */
+    color: #ffffff; /* bijeli tekst na gumbu */
+    cursor: pointer; /* kursor se mijenja u prstić kad se prođe preko */
+    font-weight: bold; /* podebljan tekst gumba */
+}
+
+/* Galerija slika s više kolona */
+.galerija-slike {
+    margin-top: 20px;
+    display: grid; /* koristi grid za galeriju */
+    /* pravi onoliko kolona koliko stane, minimalno 180px svaka */
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); 
+    gap: 15px; /* razmak između slika u galeriji */
+}
+
+/* Video sekcija */
+.video-blok {
+    margin-top: 15px;
+    text-align: center; /* centriraj naslov videa i video */
+}
+
+/* Slike u detaljnom članku - napredniji grid */
+.detaljni-clanak .galerija-clanak {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 15px;
+    margin-top: 20px;
+}
+
+/* Poseban stil za slike unutar članaka */
+.detaljni-clanak .galerija-clanak img {
+    width: 100%;
+    height: 220px; /* fiksna visina da galerija izgleda uredno */
+    object-fit: cover; /* bitno: slika popuni prostor, ne rasteže se */
+    border-radius: 6px;
+}
